@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    display:grid;
+    grid-template-columns: 1fr 35rem 35rem;
+    grid-template-rows: 5rem 1fr 1fr;
+    grid-template-areas: "nav header header"
+                         "nav article aside"
+                         "nav footer footer";
+    min-height: 300px;
+    text-align: center;
+    
+}
+header{
+    grid-area: header;
+    width: 700px;
+    height: 80px;
+    text-align: center;
+    background-color: greenyellow;
+}
+nav{
+    grid-area: nav;
+    width: 130px;
+    height: 630px;
+    text-align: center;
+    background-color: rgb(124, 180, 177);
+}
+article{
+    grid-area: article;
+    width: 400px;
+    height: 330px;text-align: left;
+
+    background-color: rgb(255, 255, 255);
+}
+aside{
+    grid-area: aside;
+    width: 140px;
+    height: 450px;
+    text-align: center;
+    background-color: rgb(124, 180, 177);
+}
+
+footer{
+    grid-area: footer;
+
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    background-color:greenyellow;
+}
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <nav>Nav</nav>
+        <header>Header</header>
+        <article>Article</article>
+         <aside>Aside</aside>
+        
+        <footer>Footer</footer>
+    </div>
+    
+</body>
+</html>
